@@ -1,0 +1,9 @@
+AcmeDemoBundle_Poll:
+    resource: "@AcmeDemoBundle/Controller/Poll/"
+    type:     admingenerator
+    prefix:   /admin/poll
+    
+AcmeDemoBundle_PollQuestion:
+    resource: "@AcmeDemoBundle/Controller/PollQuestion/"
+    type:     admingenerator
+    prefix:   /admin/pollquestion

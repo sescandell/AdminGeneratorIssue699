@@ -1,0 +1,62 @@
+generator: admingenerator.generator.doctrine
+params:
+    model: Acme\DemoBundle\Entity\Poll
+    namespace_prefix: Acme
+    concurrency_lock: ~
+    bundle_name: DemoBundle
+#    embed_types:
+#        - "PollQuestion-generator.yml"
+    pk_requirement: ~
+    fields:
+        pollQuestion:
+            formType: collection
+            addFormOptions:
+                type: \Acme\DemoBundle\Form\Type\PollQuestion\NewType
+                options:
+                    data_class: Acme\DemoBundle\Entity\PollQuestion
+                allow_add: true
+                allow_delete: true
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: List for DemoBundle
+            display: [isActive, title]
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    filters:
+        params:
+            display: ~
+    new:
+        params:
+            title: New object for DemoBundle
+            display: [isActive, title, pollQuestion]
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the object \"%object%\"|{ %object%: Poll.title }|"
+            display: [isActive, title]
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the object \"%object%\"|{ %object%: Poll.title }|"
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

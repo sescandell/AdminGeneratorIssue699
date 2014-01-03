@@ -1,0 +1,52 @@
+generator: admingenerator.generator.doctrine
+params:
+    model: Acme\DemoBundle\Entity\PollQuestion
+    namespace_prefix: Acme
+    concurrency_lock: ~
+    bundle_name: DemoBundle
+    pk_requirement: ~
+    fields: ~
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: List for DemoBundle
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    filters:
+        params:
+            display: ~
+    new:
+        params:
+            title: New object for DemoBundle
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the object \"%object%\"|{ %object%: PollQuestion.title }|"
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the object \"%object%\"|{ %object%: PollQuestion.title }|"
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~
