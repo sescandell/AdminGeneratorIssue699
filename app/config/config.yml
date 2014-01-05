@@ -28,6 +28,12 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - AdmingeneratorGeneratorBundle:Form:fields.html.twig
+            - AvocodeFormExtensionsBundle:Form:form_widgets.html.twig
+            - AvocodeFormExtensionsBundle:Form:form_javascripts.html.twig
+            - AvocodeFormExtensionsBundle:Form:form_stylesheets.html.twig
 
 # Assetic Configuration
 assetic:
@@ -74,5 +80,10 @@ admingenerator_generator:
     use_propel:           false
     use_doctrine_orm:     true
     use_doctrine_odm:     false
+    base_admin_template: ::base.html.twig
+    twig:
+        use_form_resources: false
 
-    base_admin_template: AdmingeneratorGeneratorBundle::base_admin_assetic_less.html.twig
+avocode_form_extensions:
+    twig:
+        use_form_resources: false

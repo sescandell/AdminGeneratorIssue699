@@ -33,6 +33,9 @@ builders:
     filters:
         params:
             display: ~
+            fields:
+                created:
+                    form_type: afe_daterange_picker
     new:
         params:
             title: New object for DemoBundle

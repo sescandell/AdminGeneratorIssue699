@@ -43,11 +43,19 @@ class Poll
     private $pollQuestion;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    private $created;
+
+    /**
      *
      */
     public function __construct()
     {
         $this->pollQuestion = new ArrayCollection();
+        $this->created = new \DateTime();
     }
 
 
@@ -133,10 +141,20 @@ class Poll
     /**
      * Get pollQuestion
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getPollQuestion()
     {
         return $this->pollQuestion;
+    }
+
+    /**
+     * Get created
+     *
+     * @return DateTime
+     */
+    public function getCreated()
+    {
+        return $this->created;
     }
 }
