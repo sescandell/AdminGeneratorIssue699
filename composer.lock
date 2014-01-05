@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f916ef6b688a9d234a337e8d2e1ed36b",
+    "hash": "5b780146d0379c3fcaa5f2b605149c60",
     "packages": [
         {
             "name": "afarkas/html5shiv",
-            "version": "dev-master",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aFarkas/html5shiv.git",
-                "reference": "cec73ff6d8d8f25423439efa8940fd86da46e146"
+                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/cec73ff6d8d8f25423439efa8940fd86da46e146",
-                "reference": "cec73ff6d8d8f25423439efa8940fd86da46e146",
+                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/a4d4dcbe0875ba10c4c56c54454ae93031d59584",
+                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
             ],
             "description": "Defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.",
             "homepage": "http://paulirish.com/2011/the-history-of-the-html5-shiv/",
-            "time": "2013-11-26 19:17:01"
+            "time": "2013-09-23 07:20:29"
         },
         {
             "name": "avocode/form-extensions-bundle",
@@ -46,16 +46,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/avocode/FormExtensions.git",
-                "reference": "5a67ff6c306a7983c9c8029aca66f7ccf3a105c5"
+                "reference": "79ba8ca1c9161a2e15dc03c97b7c4db1bcee033e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avocode/FormExtensions/zipball/5a67ff6c306a7983c9c8029aca66f7ccf3a105c5",
-                "reference": "5a67ff6c306a7983c9c8029aca66f7ccf3a105c5",
+                "url": "https://api.github.com/repos/avocode/FormExtensions/zipball/79ba8ca1c9161a2e15dc03c97b7c4db1bcee033e",
+                "reference": "79ba8ca1c9161a2e15dc03c97b7c4db1bcee033e",
                 "shasum": ""
             },
             "require": {
-                "afarkas/html5shiv": "dev-master",
+                "afarkas/html5shiv": "~3.7",
                 "components/bootstrap": ">= 2.3.1",
                 "components/font-awesome": ">= 3.2.0",
                 "components/jquery": ">= 1.9.0, < 2.0.0",
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2013-12-28 17:36:58"
+            "time": "2014-01-05 22:08:26"
         },
         {
             "name": "cedriclombardot/admingenerator-generator-bundle",
@@ -100,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle.git",
-                "reference": "aa1e8b3651fbdf30fcb48e941b0e3e3431a7a856"
+                "reference": "a2a444708eef5ab4549d7cc44aacab3f89ed88c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/aa1e8b3651fbdf30fcb48e941b0e3e3431a7a856",
-                "reference": "aa1e8b3651fbdf30fcb48e941b0e3e3431a7a856",
+                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/a2a444708eef5ab4549d7cc44aacab3f89ed88c0",
+                "reference": "a2a444708eef5ab4549d7cc44aacab3f89ed88c0",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-01-03 11:30:18"
+            "time": "2014-01-05 22:34:13"
         },
         {
             "name": "cedriclombardot/twig-generator",
@@ -2244,8 +2244,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "cedriclombardot/admingenerator-generator-bundle": 20,
-        "avocode/form-extensions-bundle": 20,
-        "afarkas/html5shiv": 20
+        "avocode/form-extensions-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
