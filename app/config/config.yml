@@ -87,3 +87,9 @@ admingenerator_generator:
 avocode_form_extensions:
     twig:
         use_form_resources: false
+        
+jms_di_extra:
+    locations:
+        all_bundles: false
+        bundles: [AcmeDemoBundle]
+        directories: ["%kernel.root_dir%/../src"]
